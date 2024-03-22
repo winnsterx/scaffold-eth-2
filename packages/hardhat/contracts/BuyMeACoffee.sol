@@ -115,7 +115,7 @@ contract BuyMeACoffee {
 
         Memo memory memo = memos[index];
 
-        if (memo.userAddress != msg.sender || msg.sender != owner) {
+        if (memo.userAddress != msg.sender && msg.sender != owner) {
             revert InvalidArguments("Operation not allowed");
         }
 
