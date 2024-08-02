@@ -139,6 +139,14 @@ const config: HardhatUserConfig = {
       url: "https://sepolia.mode.network",
       accounts: [deployerPrivateKey],
     },
+    fraxtal: {
+      url: "https://rpc.frax.com",
+      accounts: [deployerPrivateKey],
+    },
+    fraxtalHolesky: {
+      url: "https://rpc.testnet.frax.com",
+      accounts: [deployerPrivateKey],
+    },
   },
   // configuration for harhdat-verify plugin
   etherscan: {
