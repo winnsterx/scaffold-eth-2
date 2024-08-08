@@ -14,10 +14,11 @@ import {
 } from "~~/components/scaffold-eth";
 import { useOutsideClick } from "~~/hooks/scaffold-eth";
 
-type HeaderMenuLink = {
+export type HeaderMenuLink = {
   label: string;
   href: string;
   icon?: React.ReactNode;
+  children?: HeaderMenuLink[];
 };
 
 export const menuLinks: HeaderMenuLink[] = [
